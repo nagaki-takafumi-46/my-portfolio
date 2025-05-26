@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <!--<h1>私の愛車</h1>-->
+    <!-- ギャラリー（画像クリックで拡大） -->
+    <section id="gallery">
+      <h2 class="title">HC33 LAUREL</h2>
+      <div class="gallery">
+          <img src="a-1.jpg" alt="HC33 LAUREL" class="thumbnail">
+          <!--<img src="car2.jpg" alt="愛車の写真2" class="thumbnail">
+          <img src="car3.jpg" alt="愛車の写真3" class="thumbnail">-->
+      </div>
+      <div id="lightbox" class="hidden">
+          <span id="close">&times;</span>
+          <img id="lightboxImg">
+      </div>
+  </section>
+
+  <nav>
+    <ul>
+        <!--<li><a href="#about">車について</a></li>-->
+        <li><a href="#specs">スペック</a></li>
+        <!--<li><a href="#gallery">ギャラリー</a></li>-->
+        <!--<li><a href="#contact">お問い合わせ</a></li>-->
+        <li><a href="#vehicleinspections">車検</a></li>
+        <li><a href="#oilexchanges">オイル交換</a></li>
+        <li><a href="#maintenances">他のメンテナンス</a></li>    
+    </ul>
+</nav>
+</header>
+
+<main>
+    
+
+    <!-- 車の紹介 -->
+    <!--<section id="about">
+        <h2>車について</h2>
+        <p>これは私の愛車の紹介ページです！</p>
+    </section>-->
+
+    <!-- スペック（ボタンで表示・非表示） -->
+    <section id="specs">
+        <!--<h2>スペック</h2>-->
+        <button id="toggleSpecs">スペックを表示</button>
+        <table id="specTable" style="display: none;">
+            <tr>
+                <th>メーカー</th>
+                <td>日産</td>
+            </tr>
+            <tr>
+                <th>車種</th>
+                <td>ローレル</td>
+            </tr>
+            <tr>
+                <th>年式</th>
+                <td>1993年</td>
+            </tr>
+            <tr>
+                <th>エンジン</th>
+                <td>1998cc RB20型</td>
+            </tr>
+            <tr>
+                <th>燃費</th>
+                <td>9.0 km/L</td>
+            </tr>
+            <tr>
+                <th>カラーNO</th>
+                <td>326</td>
+            </tr>
+            <tr>
+                <th>最高出力</th>
+                <td>125馬力</td>
+            </tr>
+            <tr>
+                <th>最大トルク</th>
+                <td>172N・m</td>
+            </tr>
+            <tr>
+                <th>寸法</th>
+                <td>全長:4690mm/全幅:1695mm/全高:1365mm</td>
+            </tr>
+            <tr>
+                <th>車両重量</th>
+                <td>1,300kg</td>
+            </tr>
+            <tr>
+                <th>乗車定員</th>
+                <td>5人</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="vehicleinspections">
+        <button id="toggleVehicleinspections">車検を表示</button>
+        <table id="vehicleinspectionTable" style="display: none;">
+            <tr>
+                <th>車検日</th>
+                <th>走行距離</th>
+            </tr>
+            <tr>
+                <td>2025年2月12日</td>
+                <td>383,200km</td>
+            </tr>
+            <tr>
+                <td>2023年2月21日</td>
+                <td>363,700km</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="oilexchanges">
+        <button id="toggleOilexchanges">オイル交換を表示</button>
+        <table id="oilexchangeTable" style="display: none;">
+            <tr>
+                <th>交換日</th>
+                <th>走行距離</th>
+                <th>オイル銘柄</th>
+                <th>オイル種類</th>
+                <th>オイルエレメント交換有無</th>
+            </tr>
+            <tr>
+                <td>2025年5月4日</td>
+                <td>385,629km</td>
+                <td>Castrol GTX DC-TURBO 10W-30</td>
+                <td>鉱物油</td>
+                <td>無</td>
+            </tr>
+            <tr>
+                <td>2025年1月19日</td>
+                <td>382,707km</td>
+                <td>Castrol GTX DC-TURBO 10W-30</td>
+                <td>鉱物油</td>
+                <td>有</td>
+            </tr>    
+                <td>2024年12月14日</td>
+                <td>381,438km</td>
+                <td>Castrol GTX DC-TURBO 10W-30</td>
+                <td>鉱物油</td>
+                <td>無</td>
+            </tr>
+                <td>2024年8月15日</td>
+                <td>378,585km</td>
+                <td>Castrol GTX DC-TURBO 10W-30</td>
+                <td>鉱物油</td>
+                <td>無</td>     
+        </table>
+    </section>
+ 
+    <section id="maintenances">
+        <button id="toggleMaintenances">他のメンテナンスを表示</button>
+        <table id="maintenanceTable" style="display: none;">
+            <tr><td colspan2"2">記録がありませんがありません</td></tr> 
+        </table>
+    </section>
+
+    <!--<footer>
+      <p>&copy; 2025 私の愛車サイト. All rights reserved.</p>
+    </footer>-->
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
